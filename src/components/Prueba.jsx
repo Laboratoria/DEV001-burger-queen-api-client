@@ -1,1 +1,0 @@
-export function Prueba (){ return ( <h1>Hola estoy en otra pagina</h1> )}
