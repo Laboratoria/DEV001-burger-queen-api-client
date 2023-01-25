@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom";
 export function Login() {
   return( 
     <section className="contenedor-principal">
@@ -5,7 +6,7 @@ export function Login() {
         <form className="formulario-login">
           <input type="text" placeholder=" Usuario" />
           <input type="text" placeholder="Contraseña" />
-          <button className="btn-ingresar"> Login</button>
+                <Link to= '/Menu'> <button className="btn-ingresar"> Login</button> </Link>
         </form>
     </section> )
 }
