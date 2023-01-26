@@ -1,13 +1,16 @@
-import {Link} from "react-router-dom";
+import { Link } from "react-router-dom";
+
 export function Login() {
-  return( 
+  return (
     <section className="contenedor-principal">
-   <h1 className="inicio-sesion">INICIO DE SESION</h1>
+      <div className="caja-formulario">
+        <h1 className="inicio-sesion">SIGN IN</h1>
         <form className="formulario-login">
-          <input type="text" placeholder=" Usuario" />
-          <input type="text" placeholder="Contraseña" />
-                <Link to= '/Menu'> <button className="btn-ingresar"> Login</button> </Link>
+          <input type="text" placeholder=" User" className="input-login" />
+          <input type="password" placeholder="Password" className="input-password" />
+          <Link to='/Menu'> <button className="btn-ingresar"> Login</button> </Link>
         </form>
-    </section> )
+      </div>
+    </section>)
 }
 
