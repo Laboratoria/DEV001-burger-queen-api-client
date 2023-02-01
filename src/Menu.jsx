@@ -1,11 +1,13 @@
-import Options from "./components/Options"
+import Productos from "./components/Productos"
 import {useState} from 'react'
 
 function Menu () {
+
+    
     return (
         <>
             <>
-                <Options
+                <Productos
                     optionSelect='Café Americano'
                     cost='S/5.00'
                     add='Agregar'
@@ -20,4 +22,4 @@ function Menu () {
 
 
 export default Menu
-//{ return (<h1>Hola estoy en otra pagina</h1>) }
+
