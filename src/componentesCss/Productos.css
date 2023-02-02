@@ -1,0 +1,7 @@
+.caja-producto {
+    border: solid 2px yellow;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 15px;
+    background: #333324;
+}
