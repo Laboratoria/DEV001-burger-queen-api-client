@@ -1,11 +1,14 @@
-import { Link } from "react-router-dom";
+//import { Link } from "react-router-dom";
 import { useState } from "react";
-import { useNavigate } from 'react-router-dom'
-//import { useForm } from 'react-hook-form';
+import { useNavigate } from 'react-router-dom';
+// import { useForm } from 'react-hook-form';
+
 
 export function Login() {
 
   const link = useNavigate()
+
+
 
   const [input, setInput] = useState({
     email: "",
@@ -24,7 +27,7 @@ export function Login() {
   const handleSubmit = (e) => {
     e.preventDefault()
     if (!input.email || !input.password) {
-      alert('Datos incompletos')
+      alert('Por favor ingresa todos los datos')
       return
     }
 
@@ -41,6 +44,9 @@ export function Login() {
           link('/menu')
         }
         console.log(res);
+      })
+      .catch((err) => {
+        alert('Datos inválidos')
       });
 
   }

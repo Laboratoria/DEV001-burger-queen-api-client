@@ -1,47 +1,33 @@
 import Productos from "./components/Productos"
-import { useState, useEffect, useContext } from 'react';
-import ProductContext from './src/components/DataContext.jsx';
-
-function Menu () {
-
-    const { items } = useContext(ProductContext)
-    const [db, setDb] = useState([]);
-
-    useEffect(() => {
-        const products = async () => {
-            await fetch('http://localhost:3004/users') // hacemos la petición get
-                .then(res => res.json()) // cuando hayamos terminado (then) parseamos a json la respuesta de la petición
-                .then(res => setDb(res)); // cuando hayamos terminado (then) actualizamos el estado nombre
-        }
-        products()
-    }, []); 
-    
+import { useState } from 'react'
+function Menu() {
     return (
         <>
-            <>
+            {/* <button > Desayuno</button>
+            <button > Almuerzo/Cena</button> */}
+            <><Productos
+                producSelect='Café americano'
+                cost='-S/5.00'
+                add='Agregar'
+            />
                 <Productos
-                    producSelect='Café Americano'
-                    cost='S/5.00'
-                    //buttonClassName='Agregar'
+                    producSelect='Café con leche'
+                    cost='-S/7.00'
+                    add='Agregar'
                 />
                 <Productos
-                    producSelect='Café Americano'
-                    cost='S/5.00'
-                    //buttonClassName='Agregar'
+                    producSelect='Sandwich jamón y queso'
+                    cost='-S/10.00'
+                    add='Agregar'
                 />
                 <Productos
-                    producSelect='Café Americano'
-                    cost='S/5.00'
-                    //buttonClassName='Agregar'
+                    producSelect='Jugo de naranja'
+                    cost='-S/7.00'
+                    add='Agregar'
                 />
             </>
         </>
+
     )
 }
-
-
-
-
-
 export default Menu
-
