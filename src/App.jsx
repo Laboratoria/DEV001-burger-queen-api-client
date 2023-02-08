@@ -1,12 +1,11 @@
-import { useState } from 'react';
-import './App.css';
-import { Login } from './components/Login';
-import './componentesCss/Login.css';
-import { Routes, Route } from 'react-router-dom';
-import Menu from './Menu';
+import './App.css'
+import { Login } from './components/Login'
+import './componentesCss/Login.css'
+import { Routes, Route } from 'react-router-dom'
+import { Menu } from './components/Menu'
 import './componentesCss/Menu.css'
-
-function App() {
+import './componentesCss/Productos.css'
+function App () {
   return (
     <section className='App'>
 
@@ -19,4 +18,4 @@ function App() {
   )
 }
 
-export default App;
+export default App

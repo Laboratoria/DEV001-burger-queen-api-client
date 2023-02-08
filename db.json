@@ -1,37 +1,5 @@
-{
-    "users": [
-      {
-        "email": "lore@gmail.com",
-        "password": "$2a$10$yoYwr0iIiius79a7.35hgOIHX3jF08Q6X8xRxJDD/W7tm1RT4RVdO",
-        "roles": {
-          "admin": false,
-          "mesero": true,
-          "cocinero": false,
-          "id": 1
-        }
-      },
-      {
-        "email": "adri@gmail.com",
-        "password": "$2a$10$wmvdNXDgjqkFK5PoIsHx/.JVxzL46R91qG4RZvd75OHMEMPms9jZ6",
-        "id": 3
-      },
-      {
-        "email": "lorena@gmail.com",
-        "password": "$2a$10$nFN4ke1WCOOnZzuLHubZdeeAZyKmg0eaW8/.spd/gJljSD9vvEw7u",
-        "id": 4
-      },
-      {
-        "email": "adriana@gmail.com",
-        "password": "$2a$10$8PDCzJxZhI/QE5DUXj81oev0eV4NseVBiTCg9xcXJm785ae8Ld/nC",
-        "roles": {
-          "admin": false,
-          "mesero": true,
-          "cocinero": false
-        },
-        "id": 5
-      }
-    ],
-"productos": [ 
+{ 
+  "productos": [ 
     {
         "id": "2",
         "name": "Café con leche ",
@@ -107,5 +75,3 @@
       }
     ]
   }
-
-  
