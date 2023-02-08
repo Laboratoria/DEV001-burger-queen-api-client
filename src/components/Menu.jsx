@@ -1,6 +1,11 @@
 import { Productos } from './Productos'
 import { useEffect, useState } from 'react'
+// import ProductContext from './DataContext'
+
+
 export function Menu() {
+  // const { items } = useContext(ProductContext)
+  // const { setItems } = useContext(ProductContext)
   const [db, setdb] = useState([])
 
   useEffect(() => {

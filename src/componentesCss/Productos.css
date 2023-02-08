@@ -17,6 +17,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    gap: 10px;
 }
 
 .breakFast {
@@ -28,12 +31,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    gap: 10px;
 }
 
 .productos {
     border-radius: 30px;
     margin-top: 30px;
     display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    place-content: center;
+    place-items: center;
 }
 
 .total {
