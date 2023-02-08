@@ -1,8 +1,48 @@
-
-.lunch{
-    background-color: orange;
+.menu-padre {
+    background: url('../public/fondo2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
 }
 
-.breakFast{
+.lunch {
+    background-color: orange;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.breakFast {
     background-color: greenyellow;
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productos {
+    border-radius: 30px;
+    margin-top: 30px;
+    display: grid;
+}
+
+.total {
+    background-color: rgb(192, 115, 211);
+    border: solid 1px black;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -1,6 +1,6 @@
 import { Productos } from './Productos'
 import { useEffect, useState } from 'react'
-export function Menu () {
+export function Menu() {
   const [db, setdb] = useState([])
 
   useEffect(() => {
@@ -10,17 +10,21 @@ export function Menu () {
   }, [])
 
   return (
-    <div>
-      {
-     db.map(el => {
-       return (
-         <Productos key={el.id} nombre={el.name} precio={el.price} tipo={el.type} />
-       )
-     })
+    <div className='menu-padre'>
+      <div className='productos'>
+        {
+          db.map(el => {
+            return (
+              <Productos key={el.id} nombre={el.name} precio={el.price} tipo={el.type} />
+            )
+          })
 
-      }
-      <p>Total</p>
-      <button> Pagar</button>
+        }
+      </div>
+      <div className='total'>
+        <p>Total</p>
+        <button> Pagar</button>
+      </div>
     </div>
   )
 }
