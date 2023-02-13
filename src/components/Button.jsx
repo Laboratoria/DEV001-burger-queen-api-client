@@ -29,7 +29,7 @@ function Button({ cost, producSelect }) {
     const { click } = useContext(ProductContext);
 
 
-    let text = isAdd ? 'Añadir' : 'Elimar';
+    let text = isAdd ? 'Añadir' : 'Eliminar';
 
     let buttonClassName = isAdd
         ? 'add-products'

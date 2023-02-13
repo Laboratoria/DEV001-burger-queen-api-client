@@ -29,7 +29,7 @@ export function Menu () {
   return (
     <div className='menu-padre'>
       <button className='btn-desayuno' onClick={handleClickDesayuno}>Desayuno</button>
-      <button className='btnalmuerzo' onClick={handleClickAlmuerzo}>Almuerzo/cena</button>
+      <button className='btnalmuerzo' onClick={handleClickAlmuerzo}>Almuerzo/Cena</button>
       <div className='productos'>
         {
             esdesayuno
