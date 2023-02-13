@@ -2,7 +2,6 @@ import { useContext } from 'react'
 import ProductContext from './DataContext'
 
 export function Productos({ nombre, precio, tipo }) {
-
   const { setItems } = useContext(ProductContext)
 
   const addProduct = (product) => {
