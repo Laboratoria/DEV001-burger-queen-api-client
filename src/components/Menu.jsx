@@ -2,6 +2,7 @@ import { Productos } from './Productos'
 import { useEffect, useState } from 'react'
 export function Menu () {
   const [db, setdb] = useState([])
+  const [totalCuenta, setTotalCuenta] = useState([])
   const [esdesayuno, setesdesayuno] = useState(true)
 
   useEffect(() => {
@@ -26,10 +27,14 @@ export function Menu () {
     console.log(esdesayuno)
   }
 
+  const addProducto = (product) => {
+    setTotalCuenta(totalCuenta => [...totalCuenta, product])
+  }
+  console.log(totalCuenta)
   return (
     <div className='menu-padre'>
       <button className='btn-desayuno' onClick={handleClickDesayuno}>Desayuno</button>
-      <button className='btnalmuerzo' onClick={handleClickAlmuerzo}>Almuerzo/Cena</button>
+      <button className='btn-almuerzo' onClick={handleClickAlmuerzo}>Almuerzo</button>
       <div className='productos'>
         {
             esdesayuno
@@ -40,7 +45,7 @@ export function Menu () {
               })
               : arrayalmuerzo.map(el => { // si no muestre :
                 return (
-                  <Productos key={el.id} nombre={el.name} precio={el.price} tipo={el.type} />
+                  <Productos key={el.id} nombre={el.name} precio={el.price} tipo={el.type} addProducto={addProducto} />
                 )
               })
 
