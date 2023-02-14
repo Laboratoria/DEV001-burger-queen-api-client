@@ -40,7 +40,7 @@ export function Menu () {
             esdesayuno
               ? arraydesayuno.map(el => { // esto es como un if, si es desayuno muestre  ?
                 return (
-                  <Productos key={el.id} nombre={el.name} precio={el.price} tipo={el.type} />
+                  <Productos key={el.id} nombre={el.name} precio={el.price} tipo={el.type} addProducto={addProducto} />
                 )
               })
               : arrayalmuerzo.map(el => { // si no muestre :
@@ -51,9 +51,14 @@ export function Menu () {
 
         }
       </div>
-      <div className='total'>
-        <p>Total</p>
-        <button> Pagar</button>
+
+      <div className='total-cuenta'> <h1 className='Cuenta'> Cuenta </h1>
+        <ul>
+          {
+            totalCuenta.map((item) => <li className='chekear' key={Math.random().toString(36).replace(/[^a-z]+/g, '')}>${item.price} - {item.name}</li>)
+          }
+        </ul>
+        <button className='btn-cocina'>Enviar/Cocina</button>
       </div>
     </div>
   )

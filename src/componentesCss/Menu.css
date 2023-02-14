@@ -35,3 +35,31 @@
     margin: 5px;
     cursor: pointer;
 } 
+.total-cuenta{
+   position: relative;
+   top:-15px ;
+   left:225px ;
+    margin-top: -400px;
+    background: red;
+    padding: 100px;
+}
+
+.btn-cocina {
+    background: greenyellow;
+    position: relative;
+    display: inline-block;
+    bottom: -50px;
+    right:50px;
+    padding: 5px 30px;;
+    margin: -20px;
+    cursor: pointer;
+}
+.Cuenta{
+    position: relative;
+    display: inline-block;
+    bottom: 80px;
+    right:50px;
+    padding: 20px 30px;;
+    margin: -20px;
+}
+
