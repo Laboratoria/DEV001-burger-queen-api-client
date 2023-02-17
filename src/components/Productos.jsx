@@ -1,15 +1,13 @@
 import { useContext } from 'react'
 import ProductContext from './DataContext'
 
-export function Productos ({ nombre, precio, tipo, addProducto }) {
+export function Productos ({ name, price, type, addProducto }) {
   const { setItems } = useContext(ProductContext)
 
-  
-
   return (
-    <div className={tipo}>
-      <p>{`${nombre} $${precio}.00`}</p>
-      <button className='add-products' onClick={() => addProducto({ precio, nombre })}>Agregar</button>
+    <div className={type}>
+      <p>{`${name} $${price}.00`}</p>
+      <button className='add-products' onClick={() => addProducto({ price, name })}>Agregar</button>
       {/* <button>Agregar</button> */}
     </div>
   )

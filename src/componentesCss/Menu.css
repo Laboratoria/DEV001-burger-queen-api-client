@@ -17,49 +17,65 @@
 .cost {
     color: white;
     font-size: 20px;
-} 
+}
 
 .btn-desayuno {
-  background-color: brown;
-  display: flex;
-  padding: 10px;
-  margin: 5px;
-  cursor: pointer;
-  
-} 
-.btn-almuerzo {
-    background-color: brown;
+    background-color: #847355;
     display: flex;
-    align-items: center;
     padding: 10px;
     margin: 5px;
     cursor: pointer;
-} 
-.total-cuenta{
-   position: relative;
-   top:-15px ;
-   left:225px ;
-    margin-top: -400px;
-    background: red;
+    color: rgb(255 255 255);
+    height: 80px;
+    font-size: 40px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.btn-almuerzo {
+    background-color: #847355;
+    display: flex;
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+    color: rgb(255 255 255);
+    height: 80px;
+    font-size: 40px;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.total-cuenta {
+    top: -15px;
+    left: 320px;
+    margin-top: 300px;
+    background: #96292c;
     padding: 100px;
+    border-radius: 10px;
+    grid-column: 2 / 2;
+    position: fixed;
+    font-size: 25px;
 }
 
 .btn-cocina {
-    background: greenyellow;
+background: #efefef;
     position: relative;
     display: inline-block;
     bottom: -50px;
-    right:50px;
-    padding: 5px 30px;;
+    right: 50px;
+    padding: 5px 30px;
     margin: -20px;
     cursor: pointer;
+    font-size: 30px;
+    border-radius: 5px;
 }
-.Cuenta{
+
+.Cuenta {
     position: relative;
     display: inline-block;
     bottom: 80px;
-    right:50px;
-    padding: 20px 30px;;
+    right: 50px;
+    padding: 20px 30px;
+    ;
     margin: -20px;
 }
-

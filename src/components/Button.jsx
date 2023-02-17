@@ -1,10 +1,10 @@
 import { useContext } from 'react'
-import ProductContext from './DataContext';
+import ProductContext from './DataContext'
 
 // function Button({ initialState, value, product }) {
 
-    // const { isAdd } = useContext(ProductContext);
-    // const { click } = useContext(ProductContext);
+// const { isAdd } = useContext(ProductContext);
+// const { click } = useContext(ProductContext);
 
 //     const [isAdd, setText] = useState(initialState)
 //     let text = isAdd ? 'Añadir' : 'Elimar';
@@ -23,23 +23,20 @@ import ProductContext from './DataContext';
 //         </button>
 //     )
 // }
-function Button({ cost, producSelect }) {
+function Button ({ cost, producSelect }) {
+  const { isAdd } = useContext(ProductContext)
+  const { click } = useContext(ProductContext)
 
-    const { isAdd } = useContext(ProductContext);
-    const { click } = useContext(ProductContext);
+  const text = isAdd ? 'Añadir' : 'Eliminar'
 
+  const buttonClassName = isAdd
+    ? 'add-products'
+    : 'add-products delete'
+  return (
+    <button className={buttonClassName} onClick={() => click(cost, producSelect)}>{text}
+    </button>
 
-    let text = isAdd ? 'Añadir' : 'Eliminar';
-
-    let buttonClassName = isAdd
-        ? 'add-products'
-        : 'add-products delete'
-    return (
-        <button className={buttonClassName} onClick={() => click(cost, producSelect)}>{text}
-        </button>
-
-    )
+  )
 }
 
-
-export default Button;
+export default Button

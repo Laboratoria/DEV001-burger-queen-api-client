@@ -1,18 +1,14 @@
-//import { Link } from "react-router-dom";
-import { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+// import { Link } from "react-router-dom";
+import { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
 // import { useForm } from 'react-hook-form';
 
-
-export function Login() {
-
+export function Login () {
   const link = useNavigate()
 
-
-
   const [input, setInput] = useState({
-    email: "",
-    password: "",
+    email: '',
+    password: ''
   })
 
   const valorInput = (e) => {
@@ -34,7 +30,7 @@ export function Login() {
     fetch('http://localhost:3004/login', {
       method: 'POST',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json'
       },
       body: JSON.stringify(input)
     })
@@ -43,29 +39,31 @@ export function Login() {
         if (!res.err) {
           link('/menu')
         }
-        console.log(res);
+        console.log(res)
       })
       .catch((err) => {
         alert('Datos inválidos')
-      });
-
+      })
   }
   return (
-    <section className="contenedor-principal">
-      <div className="caja-formulario">
-        <h1 className="inicio-sesion">SIGN IN</h1>
-        <form className="formulario-login" onSubmit={handleSubmit} >
-          <input type="text" placeholder=" User" className="input-login" onChange={valorInput}
+    <section className='contenedor-principal'>
+      <div className='caja-formulario'>
+        <h1 className='inicio-sesion'>SIGN IN</h1>
+        <form className='formulario-login' onSubmit={handleSubmit}>
+          <input
+            type='text' placeholder=' User' className='input-login' onChange={valorInput}
             name='email'
             value={input.email}
           />
 
-          <input type="password" placeholder="Password" className="input-password" onChange={valorInput}
+          <input
+            type='password' placeholder='Password' className='input-password' onChange={valorInput}
             name='password'
             value={input.password}
           />
-          <button className="btn-ingresar"> Login</button>
+          <button className='btn-ingresar'> Login</button>
         </form>
       </div>
-    </section>)
+    </section>
+  )
 }
