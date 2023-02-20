@@ -1,5 +1,16 @@
-/* *, ¨*::after, *::before {
-    margin: 0;
-    padding: 0;
-  } */
+.showIcon {
+
+  display: block;
+
+  font-size: 1.6rem;
+
+}
+
+.hideIcon {
+
+  visibility: hidden;
+
+}
+
+
   

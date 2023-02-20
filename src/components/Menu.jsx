@@ -37,6 +37,9 @@ export function Menu () {
   const addProducto = (product) => {
     setTotalCuenta(totalCuenta => [...totalCuenta, product])
   }
+  const handleDelete = (item) => {
+    setItems(items.filter((_, i) => items.indexOf(item) !== i))
+  }
   console.log(totalCuenta)
 
   return (
@@ -60,14 +63,16 @@ export function Menu () {
                 )
               })
 
-        }
+          }
         </div>
 
         <div className='total-cuenta'> <h1 className='Cuenta'> Cuenta </h1>
           <ul>
             {
-            totalCuenta.map((item) => <li className='chekear' key={Math.random().toString(36).replace(/[^a-z]+/g, '')}>{item.name} - ${item.price}</li>)
-          }
+              totalCuenta.map((item) => <li className='chekear' key={Math.random().toString(36).replace(/[^a-z]+/g, '')}>{item.name} - ${item.price}
+                <span className='icon-delete' onClick={() => handleDelete(item)} />
+                                        </li>)
+            }
           </ul>
 
           <h2 className='total-total'>Total :$ {total}.00</h2>
