@@ -1,0 +1,150 @@
+{
+  "users": [
+    {
+      "id": "1",
+      "role": {
+        "waiter": true,
+        "admin": false,
+        "chef": false
+      },
+      "email": "erika@gmail.com",
+      "password": "12345678"
+    },
+    {
+      "id": "2",
+      "role": {
+        "waiter": false,
+        "admin": false,
+        "chef": true
+      },
+      "email": "akire@gmail.com",
+      "password": "123456789"
+    },
+    {
+      "id": "3",
+      "email": "olivier@mail.com",
+      "password": "$2a$10$wnq5vGAFDyyunP9IkapaN.PWPe8hMQHuQoxBWouiqyVdtaKu17rbC",
+      "firstname": "Olivier",
+      "lastname": "Monge",
+      "age": 32,
+      "role": {
+        "waiter": true,
+        "admin": false,
+        "chef": false
+      }
+    },
+    {
+      "id": "4",
+      "email": "meli@mail.com",
+      "password": "$2a$10$AkLDRUcRnl71.Y6dozVGEuB5GmoPD29/pTTQdDIDI0P1gpSS01sqK",
+      "firstname": "Melania",
+      "lastname": "Palomino",
+      "role": {
+        "waiter": true,
+        "admin": false,
+        "chef": false
+      }
+    },
+    {
+      "id": "5",
+      "email": "eri@gmail.com",
+      "password": "$2a$10$Wx5pvKxcQ7BLCXYWPKBALuD7BZ6pyNCeUrhqahV1zGuj1uIPhuyPW",
+      "firstname": "Erika",
+      "lastname": "Duarte",
+      "role": {
+        "waiter": true,
+        "admin": false,
+        "chef": false
+      }
+    }
+  ],
+  "Products": [
+    {
+      "id": "1",
+      "name": "Café americano",
+      "price": 5,
+      "image": "",
+      "type": "Desayuno"
+    },
+    {
+      "id": "2",
+      "name": "Café con leche",
+      "price": 7,
+      "image": "https://raw.githubusercontent.com/ErikaDUARTEm/DEV001-burger-queen-api-client/main/src/assets/cafeconleche.png",
+      "type": "Desayuno"
+    },
+    {
+      "id": "3",
+      "name": "Sandwich de jamón y queso",
+      "price": 10,
+      "image": "",
+      "type": "Desayuno"
+    },
+    {
+      "id": "4",
+      "name": "Jugo de frutas natural",
+      "price": 10,
+      "image": "",
+      "type": "Desayuno"
+    },
+    {
+      "id": "5",
+      "name": "Hamburguesa simple",
+      "price": 10,
+      "image": "",
+      "type": "Almuerzo y cena"
+    },
+    {
+      "id": "6",
+      "name": "Hamburguesa doble",
+      "price": 15,
+      "image": "",
+      "type": "Almuerzo y cena"
+    },
+    {
+      "id": "7",
+      "name": "Papas fritas",
+      "price": 5,
+      "image": "",
+      "type": "Almuerzo y cena"
+    },
+    {
+      "id": "8",
+      "name": "Aros de cebolla",
+      "price": 5,
+      "image": "",
+      "type": "Almuerzo y cena"
+    },
+    {
+      "id": "9",
+      "name": "Agua 500ml",
+      "price": 5,
+      "image": "",
+      "type": "Almuerzo y cena"
+    },
+    {
+      "id": "10",
+      "name": "Agua 750ml",
+      "price": 7,
+      "image": "",
+      "type": "Almuerzo y cena"
+    },
+    {
+      "id": "11",
+      "name": "Bebida/gaseosa 500ml",
+      "price": 7,
+      "image": "",
+      "type": "Almuerzo y cena"
+    },
+    {
+      "id": "12",
+      "name": "Bebida/gaseosa 750ml",
+      "price": 10,
+      "image": "",
+      "type": "Almuerzo y cena"
+    },
+    {
+      "id": "FoTZ8qr"
+    }
+  ]
+}
