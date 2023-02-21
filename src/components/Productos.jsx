@@ -12,3 +12,4 @@ export function Productos ({ name, price, type, addProducto }) {
     </div>
   )
 }
+             

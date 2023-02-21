@@ -7,7 +7,8 @@ export function Menu () {
   const [totalCuenta, setTotalCuenta] = useState([])
   const [esdesayuno, setesdesayuno] = useState(true)
   const { items } = useContext(ProductContext)
-  // const { setItems } = useContext(ProductContext)
+  const { setItems } = useContext(ProductContext)
+  // const [total, setTotal] = useState(0) //[total, setTotal] => esto es destructurar //
 
   useEffect(() => {
     fetch('http://localhost:3000/productos') // hacemos peticion get
@@ -30,17 +31,17 @@ export function Menu () {
     setesdesayuno(false)
     // console.log(esdesayuno)
   }
-
-  const price = items.map(price => price.cost)
-  const total = price.reduce((acc, el) => acc + el, 0)
-
+  const price = totalCuenta.map(el => el.price)
+  const total = price.reduce((a, b) => a + b, 0)
   const addProducto = (product) => {
     setTotalCuenta(totalCuenta => [...totalCuenta, product])
+    console.log(total)
   }
   const handleDelete = (item) => {
-    setItems(items.filter((_, i) => items.indexOf(item) !== i))
+    // console.log(totalCuenta.filter((_, i) => totalCuenta.indexOf(item) !== i))
+    // console.log(totalCuenta)
+    setTotalCuenta(totalCuenta.filter((_, i) => totalCuenta.indexOf(item) !== i))
   }
-  console.log(totalCuenta)
 
   return (
     <div className='fondo'>
@@ -70,8 +71,8 @@ export function Menu () {
           <ul>
             {
               totalCuenta.map((item) => <li className='chekear' key={Math.random().toString(36).replace(/[^a-z]+/g, '')}>{item.name} - ${item.price}
-                <span className='icon-delete' onClick={() => handleDelete(item)} />
-                                        </li>)
+                <button onClick={() => handleDelete(item)}>Eliminar</button>
+              </li>)
             }
           </ul>
 
