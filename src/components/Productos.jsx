@@ -1,8 +1,8 @@
-import { useContext } from 'react'
-import ProductContext from './DataContext'
+// import { useContext } from 'react'
+// import ProductContext from './DataContext'
 
 export function Productos ({ name, price, type, addProducto }) {
-  const { setItems } = useContext(ProductContext)
+  // const { setItems } = useContext(ProductContext)
 
   return (
     <div className={type}>
@@ -12,4 +12,3 @@ export function Productos ({ name, price, type, addProducto }) {
     </div>
   )
 }
-             

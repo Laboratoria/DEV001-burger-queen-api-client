@@ -1,15 +1,16 @@
 import { Productos } from './Productos'
-import { useEffect, useState, useContext } from 'react'
-import ProductContext from './DataContext'
+import { useEffect, useState } from 'react'
+// import ProductContext from './DataContext'
 
 export function Menu () {
-  const [db, setdb] = useState([])
-  const [totalCuenta, setTotalCuenta] = useState([])
-  const [esdesayuno, setesdesayuno] = useState(true)
-  const { items } = useContext(ProductContext)
-  const { setItems } = useContext(ProductContext)
+  const [db, setdb] = useState([]) // Estado para llenar la base de datos
+  const [totalCuenta, setTotalCuenta] = useState([]) // Este añade items
+  const [esdesayuno, setesdesayuno] = useState(true) // Muestra el menú de desayunos
+  // const { items } = useContext(ProductContext)
+  // const { setItems } = useContext(ProductContext)
   // const [total, setTotal] = useState(0) //[total, setTotal] => esto es destructurar //
 
+  // Con este useEffect hacemos la petición, antes de renderizarse se ejecuta esto
   useEffect(() => {
     fetch('http://localhost:3000/productos') // hacemos peticion get
       .then(resp => resp.json())
@@ -17,13 +18,13 @@ export function Menu () {
   }, [])
   // console.log(db)
 
-  const arraydesayuno = db.filter(producto => producto.type === 'breakFast')
+  const arraydesayuno = db.filter(producto => producto.type === 'breakFast') // Aquí filtramos
   // console.log(arraydesayuno)
   const arrayalmuerzo = db.filter(producto => producto.type === 'lunch')
   // console.log(arrayalmuerzo)
 
   const handleClickDesayuno = () => {
-    setesdesayuno(true)
+    setesdesayuno(true) // Seteamos la lista de desayuno
     // console.log(esdesayuno)
   }
 
@@ -33,7 +34,7 @@ export function Menu () {
   }
   const price = totalCuenta.map(el => el.price)
   const total = price.reduce((a, b) => a + b, 0)
-  const addProducto = (product) => {
+  const addProducto = (product) => { // addProduct
     setTotalCuenta(totalCuenta => [...totalCuenta, product])
     console.log(total)
   }
