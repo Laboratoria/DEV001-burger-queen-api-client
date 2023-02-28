@@ -16,7 +16,6 @@ export function Menu () {
       .then(resp => resp.json())
       .then(resp => setdb(resp))
   }, [])
-  // console.log(db)
 
   const arraydesayuno = db.filter(producto => producto.type === 'breakFast') // Aquí filtramos
   // console.log(arraydesayuno)
