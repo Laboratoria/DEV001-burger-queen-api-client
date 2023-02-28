@@ -1,22 +1,22 @@
-// import React, { createContext, useContext, useState } from 'react'
+import React, { createContext, useContext, useState } from 'react'
 
-// const AuthContext = createContext()
+const AuthContext = createContext()
 
-// export function useAuth () {
-//   const auth = useContext(AuthContext)
-//   return auth
-// }
+export function useAuth () {
+  const auth = useContext(AuthContext)
+  return auth
+}
 
-// export function AuthProvider ({ children }) {
-//   const [user, setUser] = useState(null)
+export function AuthProvider ({ children }) {
+  const [user, setUser] = useState(null)
 
-//   const login = () => {
-//     setUser(true)
-//   }
-//   const logOut = () => {
-//     setUser(null)
-//   }
-//   return (
-//     <AuthContext.Provider value={{ user, login, logOut }}> {children} </AuthContext.Provider>
-//   )
-// }
+  const login = () => {
+    setUser(true)
+  }
+  const logOut = () => {
+    setUser(null)
+  }
+  return (
+    <AuthContext.Provider value={{ user, login, logOut }}> {children} </AuthContext.Provider>
+  )
+}
