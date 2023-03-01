@@ -2,10 +2,14 @@
 import React from 'react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
+import { useAuth } from './UseAuth'
+
 // import { useForm } from 'react-hook-form';
 
 export function Login () {
   const link = useNavigate()
+
+  const { login } = useAuth()
 
   const [input, setInput] = useState({
     email: '',
@@ -37,6 +41,9 @@ export function Login () {
     })
       .then(res => res.ok ? res.json() : Promise.reject({ err: true }))
       .then(res => {
+       const user = window.localStorage.setItem('user', JSON.stringify(res))
+
+        login(user)
         if (!res.err) {
           link('/menu')
         }

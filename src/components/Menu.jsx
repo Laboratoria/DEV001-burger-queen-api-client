@@ -1,5 +1,7 @@
 import { Productos } from './Productos'
 import { useEffect, useState } from 'react'
+import { useAuth } from './useAuth'
+import { Header } from './Header'
 // import ProductContext from './DataContext'
 
 export function Menu () {
@@ -44,14 +46,16 @@ export function Menu () {
   }
 
   return (
-    <div className='fondo'>
-      <div className='menu-padre'>
-        <div className='menu-opciones'>
-          <button className='btn-desayuno' onClick={handleClickDesayuno}>Desayuno</button>
-          <button className='btn-almuerzo' onClick={handleClickAlmuerzo}>Almuerzo</button>
-        </div>
-        <div className='productos'>
-          {
+    <>
+      <Header />
+      <div className='fondo'>
+        <div className='menu-padre'>
+          <div className='menu-opciones'>
+            <button className='btn-desayuno' onClick={handleClickDesayuno}>Desayuno</button>
+            <button className='btn-almuerzo' onClick={handleClickAlmuerzo}>Almuerzo</button>
+          </div>
+          <div className='productos'>
+            {
             esdesayuno
               ? arraydesayuno.map(el => { // esto es como un if, si es desayuno muestre  ?
                 return (
@@ -65,22 +69,23 @@ export function Menu () {
               })
 
           }
-        </div>
+          </div>
 
-        <div className='total-cuenta'> <h1 className='Cuenta'> Cuenta </h1>
-          <ul>
-            {
+          <div className='total-cuenta'> <h1 className='Cuenta'> Cuenta </h1>
+            <ul>
+              {
               totalCuenta.map((item) => <li className='chekear' key={Math.random().toString(36).replace(/[^a-z]+/g, '')}>{item.name} - ${item.price}
                 <button onClick={() => handleDelete(item)}>Eliminar</button>
-              </li>)
+                                        </li>)
             }
-          </ul>
+            </ul>
 
-          <h2 className='total-total'>Total :$ {total}.00</h2>
+            <h2 className='total-total'>Total :$ {total}.00</h2>
 
-          <button className='btn-cocina'>Enviar/Cocina</button>
+            <button className='btn-cocina'>Enviar/Cocina</button>
+          </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
