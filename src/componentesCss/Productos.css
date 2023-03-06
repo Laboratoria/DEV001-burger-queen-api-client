@@ -69,3 +69,8 @@
     background: red;
     padding: 100px;
 }
+
+.img-cierre:hover {
+    background-color: rgb(104, 98, 98);
+    transition: all 0.2s ease;
+}

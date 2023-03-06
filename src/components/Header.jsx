@@ -8,6 +8,12 @@ export function Header () {
     logOut(user)
   }
   return (
-    <button onClick={sessionOut}>Cerrar Sesion </button>
+    // <div className='caja-header'>
+    //   <button className='img-cierre' onClick={sessionOut}>Cerrar Sesion </button>
+    // </div>
+    <header className='caja-header'>
+      <img className='logo-cierre' src='../public/cerrar-sesion.png' alt='logo-sesion' />
+      <button className='img-cierre' onClick={sessionOut}>Cerrar Sesion </button>
+    </header>
   )
 }

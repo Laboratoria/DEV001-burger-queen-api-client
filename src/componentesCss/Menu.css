@@ -58,7 +58,7 @@
 }
 
 .btn-cocina {
-background: #efefef;
+    background: #efefef;
     position: relative;
     display: inline-block;
     bottom: -50px;
@@ -80,7 +80,7 @@ background: #efefef;
     margin: -20px;
 }
 
-.icon-delete{
+.icon-delete {
 
     font-size: larger;
     padding: 6px;
@@ -91,7 +91,34 @@ background: #efefef;
     background-color: red;
     width: 20px;
 }
-
-.header-container{
+.img-cierre{
     background-color: red;
+    height: 40px;
+    width: 80px;
+    color: white;
+    border-radius: 10px;
+    margin: 5px;
+    font-size: 15px;
+
+}
+
+.caja-header {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: flex-end;
+}
+
+.header-container {
+    background-color: red;
+}
+
+.img-cierresesion:hover {
+    background-color: rgb(104, 98, 98);
+    transition: all 0.2s ease;
+}
+
+.logo-cierre{
+    width: 40px;
+    height: 40px;
+
 }
