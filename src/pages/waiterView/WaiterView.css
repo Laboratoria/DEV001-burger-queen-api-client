@@ -1,0 +1,35 @@
+.header-waiterView {
+  padding: 0 20px 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color: #bdbdbd;
+  width: 100%;
+  height: 10vh;
+}
+.container-tables {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  height: 70vh;
+
+}
+.item-tables {
+  width: 200px;
+  height: 180px;
+  background-color: #bdbdbd;
+  border-radius: 10px;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+.title-tables {
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  text-align: center;
+  color: rgb(45, 245, 10);
+}
+

@@ -1,0 +1,273 @@
+{
+  "clients": [
+    {
+      "id_client": 1,
+      "name_client": "freddy",
+      "dni_client": 12345678
+    },
+    {
+      "id_client": 2,
+      "name_client": "natalia",
+      "dni_client": 65432178
+    }
+  ],
+
+  "detail_orders": [
+    {
+      "id_detail_order": 1,
+      "id_order": 1,
+      "id_product": 2
+    },
+    {
+      "id_detail_order": 2,
+      "id_order": 1,
+      "id_product": 3
+    },
+    {
+      "id_detail_order": 3,
+      "id_order": 1,
+      "id_product": 2
+    },
+    {
+      "id_detail_order": 4,
+      "id_order": 1,
+      "id_product": 3
+    }
+  ],
+  "orders": [
+    {
+      "id_order": 1,
+      "date_order": "2023-02-23",
+      "hour_order": "10:00:00",
+      "table_id_table": 1,
+      "user_id_user": 1,
+      "client_id_client": 1,
+      "order_preci_order": 0
+    },
+    {
+      "id_order": 2,
+      "date_order": "2023-02-23",
+      "hour_order": "10:00:00",
+      "table_id_table": 1,
+      "user_id_user": 1,
+      "client_id_client": 1,
+      "order_preci_order": 0
+    },
+    {
+      "id_order": 3,
+      "date_order": "2023-02-23",
+      "hour_order": "10:00:00",
+      "table_id_table": 1,
+      "user_id_user": 1,
+      "client_id_client": 1,
+      "order_preci_order": 0
+    },
+    {
+      "id_order": 4,
+      "date_order": "2023-02-23",
+      "hour_order": "10:00:00",
+      "table_id_table": 1,
+      "user_id_user": 1,
+      "client_id_client": 1,
+      "order_preci_order": 0
+    }
+  ],
+
+  "products": [
+    {
+      "id_product": 1,
+      "name_product": "Coffee&Milk",
+      "price_product": 7.0,
+      "image_product": "https://github.com/aniapalominoq/DEV001-burger-queen-api-client/blob/main/src/assets/imgMenu/cafeconleche.png?raw=true",
+      "type_product": "",
+      "dateEntry_product": "2023-02-01",
+      "category_product": "breakfast"
+    },
+    {
+      "id_product": 2,
+      "name_product": "American Coffee",
+      "price_product": 5.0,
+      "image_product": "https://github.com/aniapalominoq/DEV001-burger-queen-api-client/blob/main/src/assets/imgMenu/cafeamericano.png?raw=true",
+      "type_product": "",
+      "dateEntry_product": "2023-02-02",
+      "category_product": "breakfast"
+    },
+    {
+      "id_product": 3,
+      "name_product": "Ham&Cheese Sandwich",
+      "price_product": 10.0,
+      "image_product": "https://github.com/aniapalominoq/DEV001-burger-queen-api-client/blob/main/src/assets/imgMenu/sanwichjamon.png?raw=true",
+      "type_product": "",
+      "dateEntry_product": "2023-02-09",
+      "category_product": "breakfast"
+    },
+    {
+      "id_product": 4,
+      "name_product": "Fruit Juice",
+      "price_product": 7.0,
+      "image_product": "https://github.com/aniapalominoq/DEV001-burger-queen-api-client/blob/order/src/assets/imgMenu/jugo.png?raw=true",
+      "type_product": "",
+      "dateEntry_product": "0000-00-00",
+      "category_product": "breakfast"
+    },
+    {
+      "id_product": 5,
+      "name_product": "Plain Burger",
+      "price_product": 10.0,
+      "image_product": "https://github.com/aniapalominoq/DEV001-burger-queen-api-client/blob/main/src/assets/imgMenu/buuger.png?raw=true",
+      "type_product": "burger",
+      "dateEntry_product": "2023-02-08",
+      "category_product": "lunch dinner"
+    },
+    {
+      "id_product": 6,
+      "name_product": "Double Burger",
+      "price_product": 15.0,
+      "image_product": "https://github.com/aniapalominoq/DEV001-burger-queen-api-client/blob/main/src/assets/imgMenu/burf.png?raw=true",
+      "type_product": "burger",
+      "dateEntry_product": "2023-02-06",
+      "category_product": "lunch dinner"
+    },
+    {
+      "id_product": 7,
+      "name_product": "French Fries",
+      "price_product": 5.0,
+      "image_product": "https://github.com/aniapalominoq/DEV001-burger-queen-api-client/blob/main/src/assets/imgMenu/papasfritas.png?raw=true",
+      "type_product": "accompaniment",
+      "dateEntry_product": "2023-02-09",
+      "category_product": "lunch dinner"
+    },
+    {
+      "id_product": 8,
+      "name_product": "Onion Rings",
+      "price_product": 5.0,
+      "image_product": "https://github.com/aniapalominoq/DEV001-burger-queen-api-client/blob/main/src/assets/imgMenu/oninrings.png?raw=true",
+      "type_product": "accompaniment",
+      "dateEntry_product": "2023-02-17",
+      "category_product": "lunch dinner"
+    },
+    {
+      "id_product": 9,
+      "name_product": "Water 500ml",
+      "price_product": 5.0,
+      "image_product": "https://github.com/aniapalominoq/DEV001-burger-queen-api-client/blob/order/src/assets/imgMenu/agua500.png?raw=true",
+      "type_product": "drink",
+      "dateEntry_product": "2023-02-01",
+      "category_product": "lunch dinner"
+    },
+    {
+      "id_product": 10,
+      "name_product": "Water 750ml",
+      "price_product": 7.0,
+      "image_product": "https://github.com/aniapalominoq/DEV001-burger-queen-api-client/blob/order/src/assets/imgMenu/agua700.png?raw=true",
+      "type_product": "drink",
+      "dateEntry_product": "2023-02-01",
+      "category_product": "lunch dinner"
+    },
+    {
+      "id_product": 11,
+      "name_product": "Soda 500ml",
+      "price_product": 7.0,
+      "image_product": "https://github.com/aniapalominoq/DEV001-burger-queen-api-client/blob/order/src/assets/imgMenu/soda500.png?raw=true",
+      "type_product": "drink",
+      "dateEntry_product": "2023-02-10",
+      "category_product": ""
+    },
+    {
+      "id_product": 12,
+      "name_product": "Soda 750ml",
+      "price_product": 10.0,
+      "image_product": "https://github.com/aniapalominoq/DEV001-burger-queen-api-client/blob/order/src/assets/imgMenu/soda700.png?raw=true",
+      "type_product": "drink",
+      "dateEntry_product": "2023-02-10",
+      "category_product": "lunch dinner"
+    }
+  ],
+
+  "roles": [
+    {
+      "id_role": 1,
+      "name_role": "chef"
+    },
+    {
+      "id_role": 2,
+      "name_role": "waiter"
+    },
+    {
+      "id_role": 3,
+      "name_role": "manager"
+    }
+  ],
+  "tables": [
+    {
+      "id_table": 1,
+      "number_table": 1,
+      "state_table": 1
+    },
+    {
+      "id_table": 2,
+      "number_table": 2,
+      "state_table": 0
+    },
+    {
+      "id_table": 3,
+      "number_table": 3,
+      "state_table": 0
+    },
+    {
+      "id_table": 4,
+      "number_table": 4,
+      "state_table": 0
+    },
+    {
+      "id_table": 5,
+      "number_table": 5,
+      "state_table": 0
+    },
+    {
+      "id_table": 6,
+      "number_table": 6,
+      "state_table": 0
+    },
+    {
+      "id_table": 7,
+      "number_table": 7,
+      "state_table": 0
+    },
+    {
+      "id_table": 8,
+      "number_table": 8,
+      "state_table": 0
+    },
+    {
+      "id_table": 9,
+      "number_table": 9,
+      "state_table": 0
+    },
+    {
+      "id_table": 10,
+      "number_table": 10,
+      "state_table": 0
+    }
+  ],
+  "users": [
+    {
+      "id_user": 1,
+      "name_user": "melania palomino",
+      "image_user": "https://avatars.githubusercontent.com/u/20302054?v=4",
+      "password": "$2a$10$AkLDRUcRnl71.Y6dozVGEuB5GmoPD29/pTTQdDIDI0P1gpSS01sqK",
+      "email": "meli@mail.com",
+      "state_user": 0,
+      "role_id_role": 3
+    },
+    {
+      "id_user": 2,
+      "name_user": "erika duarte",
+      "image_user": "https://avatars.githubusercontent.com/u/105249248?v=4",
+      "password": "$2a$10$Wx5pvKxcQ7BLCXYWPKBALuD7BZ6pyNCeUrhqahV1zGuj1uIPhuyPW",
+      "email": "erika@burger.com",
+      "state_user": 0,
+      "role_id_role": 2
+    }
+  ]
+}
