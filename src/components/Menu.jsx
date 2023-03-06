@@ -72,11 +72,11 @@ export function Menu () {
           </div>
 
           <div className='total-cuenta'> <h1 className='Cuenta'> Cuenta </h1>
-            <ul>
+            <ul className='tabla-productos'>
               {
               totalCuenta.map((item) => <li className='chekear' key={Math.random().toString(36).replace(/[^a-z]+/g, '')}>{item.name} - ${item.price}
-                <button onClick={() => handleDelete(item)}>Eliminar</button>
-                                        </li>)
+                <img onClick={() => handleDelete(item)} className='btn-eliminar' src='../public/basura.png' />
+              </li>)
             }
             </ul>
 

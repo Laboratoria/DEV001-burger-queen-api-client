@@ -41,7 +41,7 @@ export function Login () {
     })
       .then(res => res.ok ? res.json() : Promise.reject({ err: true }))
       .then(res => {
-       const user = window.localStorage.setItem('user', JSON.stringify(res))
+        const user = window.localStorage.setItem('user', JSON.stringify(res))
 
         login(user)
         if (!res.err) {

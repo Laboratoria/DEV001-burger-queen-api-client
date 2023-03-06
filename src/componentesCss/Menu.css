@@ -87,14 +87,14 @@
 
 }
 
-.img-cierresesion {
+/* .img-cierresesion {
     background-color: red;
     width: 20px;
-}
+} */
 .img-cierre{
-    background-color: red;
-    height: 40px;
+    height: 60px;
     width: 80px;
+   padding: 20px;
     color: white;
     border-radius: 10px;
     margin: 5px;
@@ -103,13 +103,13 @@
 }
 
 .caja-header {
-    background-color: rgb(255, 255, 255);
+    background-color: black;
     display: flex;
     justify-content: flex-end;
 }
 
 .header-container {
-    background-color: red;
+    background-color: black;
 }
 
 .img-cierresesion:hover {
@@ -118,7 +118,38 @@
 }
 
 .logo-cierre{
+    padding: 15PX;
     width: 40px;
     height: 40px;
 
 }
+
+.tabla-productos{
+    background: gold;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -60px;
+}
+
+@media (min-width: 414px) and (max-width: 896px) {
+}
+@media (min-width: 1280px) {
+  .total-cuenta{
+    top: -15px;
+    left: 600px;
+    margin-top: 300px;
+    background: #96292c;
+    padding: 100px;
+    border-radius: 10px;
+    grid-column: 2 / 2;
+    position: fixed;
+    font-size: 25px;
+  }  
+}
+
+.btn-eliminar{
+    width: 33px;
+}
+
+
