@@ -1,7 +1,8 @@
 .fondo {
-    background: url('../public/fondo2.jpeg');
+    background: url('../public/fondo10.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 
 .menu-padre {
@@ -33,7 +34,7 @@
 }
 
 .lunch {
-    background-color: orange;
+    background-color: #e1ffe4;
     border: solid 1px black;
     border-radius: 5px;
     padding: 10px;
@@ -47,7 +48,7 @@
 }
 
 .breakFast {
-    background-color: greenyellow;
+    background-color: #e1ffe4;
     border: solid 1px black;
     border-radius: 5px;
     padding: 10px;

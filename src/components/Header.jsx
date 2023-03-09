@@ -10,7 +10,7 @@ export function Header () {
   return (
 
     <header className='caja-header'>
-      <img className='img-cierre' src='../public/cerrar.png' alt='logo-sesion' onClick={sessionOut} />
+      <img className='img-cierre' src='../public/logout.png' alt='logo-sesion' onClick={sessionOut} />
     </header>
   )
 }

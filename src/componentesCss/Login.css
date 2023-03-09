@@ -1,5 +1,5 @@
 .contenedor-principal {
-  background-image: url('../../public/img.jpg');
+  background-image: url('../../public/fondo10.jpeg');
   /* width: auto; */
   height: 100vh;
   background-repeat: no-repeat;
@@ -21,13 +21,14 @@
   border-radius: 20px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   padding: 2rem;
-  margin-top: 6rem;
+  margin-top: 20rem;
 }
 
 .inicio-sesion {
-  color: white;
+  color: black;
   margin-bottom: 20px;
   font-size: 45px;
+text-shadow: rgba(252, 129, 22, 0.5) 0px 5px 15px;
 
 }
 
@@ -41,15 +42,15 @@
 }
 
 .btn-ingresar {
-  background-color: #433f3f;
-  color: white;
+  background-color: #ff9659;
+  color: black;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
   padding-left: 40px;
   padding-right: 40px;
   font-size: 30px;
-  box-shadow: rgba(142, 139, 139, 0.35) 0px 5px 15px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .input-login {
