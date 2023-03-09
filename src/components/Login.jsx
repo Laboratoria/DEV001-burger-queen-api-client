@@ -8,7 +8,7 @@ import { useAuth } from './UseAuth'
 
 export function Login () {
   const link = useNavigate()
-
+  window.localStorage.clear()
   const { login } = useAuth()
 
   const [input, setInput] = useState({
@@ -25,33 +25,33 @@ export function Login () {
     )
   }
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
     if (!input.email || !input.password) {
       alert('Por favor ingresa todos los datos')
       return
     }
-
-    fetch('http://localhost:3004/login', {
+    const opciones = {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify(input)
-    })
-      .then(res => res.ok ? res.json() : Promise.reject({ err: true }))
-      .then(res => {
-        const user = window.localStorage.setItem('user', JSON.stringify(res))
+    }
+    const peticion = await fetch('http://localhost:3004/login', opciones)
+    const respuesta = await peticion.json()
 
-        login(user)
-        if (!res.err) {
-          link('/menu')
-        }
-        console.log(res)
-      })
-      .catch((err) => {
-        alert('Datos inválidos')
-      })
+    const user = window.sessionStorage.setItem('user', JSON.stringify(respuesta))
+
+    login(user)
+    const roles = respuesta.user.roles
+    console.log(roles)
+
+    if (roles.admin) {
+      link('/admin')
+    } else if (roles.mesero) {
+      link('/menu')
+    }
   }
   return (
     <section className='contenedor-principal'>
