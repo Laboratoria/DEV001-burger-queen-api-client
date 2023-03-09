@@ -44,7 +44,9 @@
     align-items: center;
     border-radius: 10px;
 }
-
+.add-products{
+    background: #73e9a0;;
+}
 .total-cuenta {
     top: -15px;
     left: 320px;
