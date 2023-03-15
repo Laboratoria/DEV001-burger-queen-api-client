@@ -43,7 +43,7 @@ export function Login () {
 
     const user = window.sessionStorage.setItem('user', JSON.stringify(respuesta))
 
-    login(user)
+    login()
     const roles = respuesta.user.roles
     console.log(roles)
 

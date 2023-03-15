@@ -8,10 +8,14 @@ import './componentesCss/Productos.css'
 import { RutasPrivadas } from './components/RutasPrivadas'
 import { useAuth } from './components/UseAuth'
 import { Admin } from './components/Admin'
+import { useEffect, useState } from 'react'
 function App () {
   useAuth()
+  const [user, setuser] = useState(null)
+  useEffect(() => {
+    setuser(JSON.parse(window.sessionStorage.getItem('user')))
+  }, [])
   // const { user } = useAuth()
-  const user = JSON.parse(window.sessionStorage.getItem('user'))
   console.log(user, 'aqui toyy')
   console.log(user)
   return (
