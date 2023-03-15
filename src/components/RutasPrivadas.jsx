@@ -12,7 +12,11 @@ export function RutasPrivadas ({ children, isAlowed }) {
     return <Navigate to='/' />
   }
   console.log(isAlowed)
-  return isAlowed ? children : 'no tienes permiso'
+  return isAlowed
+    ? children
+    : 'no tienes permiso'
 
-  // && user.user.roles.mesero ? <Navigate to='/menu' /> : <Navigate to='/admin' />
+  /*  user.user.roles.mesero
+      ? <Navigate to='/menu' />
+      : <Navigate to='/admin' /> */
 }
