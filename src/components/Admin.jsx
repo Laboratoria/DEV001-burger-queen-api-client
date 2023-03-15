@@ -1,5 +1,22 @@
+import { useState } from 'react'
+import { Empleados } from './Empleados'
+import { Header } from './Header'
 export function Admin () {
+  const [esempleado, setesempleado] = useState(true)
+
+  const handleClickEmpleados = () => {
+    setesempleado(true)
+  }
+
+  const handleClickProductos = () => {
+    setesempleado(false)
+  }
   return (
-    <h1>Hola usuario, esta pagina</h1>
+    <>
+      <Header />
+      <button className='btn-desayuno' onClick={handleClickEmpleados}>Empleados</button>
+      <button className='btn-almuerzo' onClick={handleClickProductos}>Productos</button>
+      <div>{esempleado ? <Empleados /> : 'No eres empleado'}</div>
+    </>
   )
 }

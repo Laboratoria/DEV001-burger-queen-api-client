@@ -11,10 +11,8 @@ import { Admin } from './components/Admin'
 import { useEffect, useState } from 'react'
 function App () {
   useAuth()
-  const [user, setuser] = useState(null)
-  useEffect(() => {
-    setuser(JSON.parse(window.sessionStorage.getItem('user')))
-  }, [])
+  const user = JSON.parse(window.sessionStorage.getItem('user'))
+
   // const { user } = useAuth()
   console.log(user, 'aqui toyy')
   console.log(user)

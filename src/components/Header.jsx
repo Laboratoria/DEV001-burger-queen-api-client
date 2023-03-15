@@ -1,9 +1,9 @@
 import { useAuth } from './UseAuth'
 export function Header () {
   const { logOut } = useAuth()
-  const user = JSON.parse(window.localStorage.getItem('user'))
+  const user = JSON.parse(window.sessionStorage.getItem('user'))
   const sessionOut = () => {
-    window.localStorage.removeItem('user')
+    window.sessionStorage.removeItem('user')
     console.log(user, 'bayy')
     logOut(user)
   }
