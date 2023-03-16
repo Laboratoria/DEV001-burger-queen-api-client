@@ -1,6 +1,11 @@
 import { useEffect, useState } from 'react'
+import swal from 'sweetalert'
 export function Empleados () {
   const [db, setdb] = useState([])
+  const modal = () => {
+    swal('esta es una alerta')
+  }
+
   useEffect(() => {
     fetch('http://localhost:3004/users')
       .then(resp => resp.json())
@@ -9,6 +14,9 @@ export function Empleados () {
   console.log(db)
   return (
     <>
+      <div className='App'>
+        <button onClick={() => modal()}>mostrar Alerta</button>
+      </div>
       <button type='button' class='btn btn-success'>Success</button>
       <table className='table'>
         <thead>
