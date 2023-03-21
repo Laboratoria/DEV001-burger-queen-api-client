@@ -1,0 +1,76 @@
+.contenedor-principal {
+  background-image: url('../../public/fondo10.jpeg');
+  /* width: auto; */
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.caja-formulario {
+  border: 1px solid #AAA2A2;
+  background-color: rgba(125, 124, 124, 0.5);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 2rem;
+  margin-top: 20rem;
+}
+
+.inicio-sesion {
+  color: black;
+  margin-bottom: 20px;
+  font-size: 45px;
+text-shadow: rgba(252, 129, 22, 0.5) 0px 5px 15px;
+
+}
+
+.formulario-login {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.btn-ingresar {
+  background-color: #ff9659;
+  color: black;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-size: 30px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.input-login {
+  margin: 10px;
+  width: 90%;
+  padding: .5rem;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid rgb(29, 29, 29);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 25px;
+}
+
+.input-password {
+  margin: 10px;
+  width: 90%;
+  padding: .5rem;
+  border-radius: 10px;
+  border: none;
+  border: 1px solid rgb(29, 29, 29);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  font-size: 25px;
+}
